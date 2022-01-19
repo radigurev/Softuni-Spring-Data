@@ -21,7 +21,8 @@
             root
         </property>
         <property name="hibernate.connection.password">
-        Bansko69
+        PASSWORD
+               
         </property>
 
         <property name="hbm2ddl.auto">
