@@ -37,7 +37,7 @@ public class Town extends BaseEntity {
         this.population = population;
     }
 
-    @Column(name = "travel_guide")
+    @Column(name = "travel_guide",columnDefinition = "TEXT")
     public String getTravelGuide() {
         return travelGuide;
     }

@@ -6,7 +6,7 @@ import javax.validation.Validator;
 
 public class ValidationUtilImpl implements ValidationUtil {
     private final Validator validator;
-    @Autowired
+
     public ValidationUtilImpl(Validator validator) {
         this.validator = validator;
     }

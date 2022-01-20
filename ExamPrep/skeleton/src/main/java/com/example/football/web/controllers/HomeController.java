@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.IOException;
+
 @Controller
 public class HomeController extends BaseController {
 
@@ -24,7 +26,7 @@ public class HomeController extends BaseController {
     }
 
     @GetMapping("/")
-    public ModelAndView index() {
+    public ModelAndView index() throws IOException {
         boolean areImported = this.townService.areImported() &&
                 this.teamService.areImported() &&
                 this.statService.areImported() &&
