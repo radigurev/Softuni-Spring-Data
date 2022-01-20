@@ -15,6 +15,7 @@ public class Offer extends BaseEntity {
     private Car car;
     private Seller seller;
     private Set<Picture> pictures;
+
     public Offer() {
     }
 
